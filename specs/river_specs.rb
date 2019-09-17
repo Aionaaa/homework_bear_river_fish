@@ -1,7 +1,7 @@
 
 require('minitest/autorun')
 require('minitest/rg')
-require_relative('../Bears')
+require_relative('../Bear')
 require_relative('../River')
 require_relative('../Fish')
 
