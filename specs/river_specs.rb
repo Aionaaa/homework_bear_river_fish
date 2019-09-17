@@ -23,5 +23,4 @@ class PetShopTest < MiniTest::Test
 
 
 
-
 end
