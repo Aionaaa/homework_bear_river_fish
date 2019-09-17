@@ -5,7 +5,7 @@ require_relative('../Bear')
 require_relative('../River')
 require_relative('../Fish')
 
-class PetShopTest < MiniTest::Test
+class TestRiver < MiniTest::Test
 
   def setup()
 
@@ -20,7 +20,10 @@ class PetShopTest < MiniTest::Test
 
   end
 
-
+  def test_remove_fish_from_river()
+    @river.remove_fish_from_river(@fish1)
+    assert_equal(4, @fishes.fish_pond())
+  end
 
 
 end

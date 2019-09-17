@@ -5,7 +5,7 @@ require_relative('../Fish.rb')
 require_relative('../River.rb')
 require_relative('../Bear.rb')
 
-class BearTest < MiniTest::Test
+class TestBear < MiniTest::Test
   def setup()
     @bear1 = Bear.new("Bjorn", "Sun Bear")
   end

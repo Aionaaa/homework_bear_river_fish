@@ -1,6 +1,6 @@
 
 class River
-  attr_reader :name, :number_of_fish
+  attr_reader :name
 
   def initialize(name, number_of_fish)
     @name = name
@@ -10,6 +10,14 @@ class River
     @fish3 = Fish.new("Percy")
     @fish4 = Fish.new("Primrose")
     @fish5 = Fish.new("Bobtwo")
+  end
+
+def fish_pond()
+  return @fishes.length
+end
+
+  def remove_fish_from_river(fish)
+    @fishes.delete(fish)
   end
 
 
